@@ -1,0 +1,373 @@
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+/*barra de busquedad*/
+div.top-header{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    box-sizing: content-box;
+}
+
+/*Comprá en cuotas y sin tarjeta de crédito*/
+header div.top-header p{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 35%;
+}
+
+header{
+    background-color: #EAC926;
+}
+
+header .form{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+/*caja logo */
+header div.logo{
+    padding: 10px;
+    width: 25%;
+    
+}
+header .form{
+    align-items: center;
+    padding: 2px;
+    font-size: 11px;
+}
+
+/*caja nav*/
+header nav{
+    font-size: 0.75rem;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*nav menu*/
+.menu{
+    display:none;
+}
+
+
+
+
+header .form .input.tex{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    width: 50%;
+
+}
+
+header .form .submit{
+    background-color: #FFF;
+    color: black;
+    width: 10%;
+    justify-content: center;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.description:hover{
+    display: block;
+
+}
+
+
+h3,
+.description{
+    color: #666;
+}
+
+.description{
+    display: none;
+    margin-top: 20px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+    transition: all ease 0.5s; 
+    overflow-y: hidden;
+    max-height: 300px;
+}
+
+.boton{
+ color:white;
+ background: grey;
+}
+input:hover[type="submit"],input:hover[type="reset"]{
+    background-color:#0022AA;
+    color:white;
+    transition: 
+        background-color,0.5s,
+        color,0.5s;
+}
+
+main section article:hover {
+    max-height: 350px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+
+}
+
+
+main section article:hover .description{
+    opacity: 1;
+}
+
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+
+
+main section h3{
+    margin: 20px 0px;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 15px;
+}
+
+footer{
+    background-attachment: scroll;
+    background-size: 100%;
+    padding: 2% 2%;
+    border-top:solid 0.1px rgba(0, 0, 0, 0.363) ;
+    display: block;
+}
+
+footer .footer-icons{
+    color: #1259c3;
+    display: block;
+    text-align: center;
+    margin-left: 30px;
+    justify-content: space-around;
+
+}
+
+/*registro formulario*/
+.register{
+    display: flex;
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.titulofooter{
+    color:black;
+    justify-content: space-around;
+}
+
+strong{
+    text-align:center;
+    font-size: small;
+}
+
+
+
+
+@media (min-width: 361px){
+
+    .register{
+        text-align: left;
+    }   
+
+    main section article .description{
+        display: block;
+    }
+
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    main section div.products article{
+        width: 45%;
+    }
+
+    .price,
+    .discount{
+        width: 50%;
+    }
+
+    .menu{
+        display:block;
+        text-align: center;
+    
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+   
+}
+
+
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    main section article .description{
+        opacity: 0;
+        transition: all ease 0.10s;
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    main section article{
+        box-shadow: none;
+    }
+
+    .menu{
+        display:flex;
+        justify-content: space-between;
+    }
+
+     .menu ul{
+      display:flex;   
+  }
+  .menu ul li{
+      margin: 0 15px;
+
+  }
+
+
+  .pie{
+        display:flex;
+        justify-content:space-around;
+        font-size: 1rem;
+    }
+
+}
+
+@media(max-width: 460px){
+
+    div.top-header{
+        display: flex;
+        flex-direction: column;
+
+
+    } 
+   
+    header .form{
+        display: flex;
+        justify-content: center;
+        width:50% ;
+        padding-left: 50%;
+    }
+  
+
+
+}
